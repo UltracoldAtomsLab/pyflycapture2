@@ -1,4 +1,4 @@
-# -*- coding: utf8 -*-
+# -*- coding: utf-8 -*-
 #
 #   pyflycapture2 - python bindings for libflycapture2_c
 #   Copyright (C) 2012 Robert Jordens <jordens@phys.ethz.ch>
@@ -421,6 +421,7 @@ cdef extern from "FlyCapture2Defs_C.h":
         unsigned int minNumImageNotifications
         int grabTimeout
         fc2GrabMode grabMode
+        BOOL highPerformanceRetrieveBuffer
         fc2BusSpeed isochBusSpeed
         fc2BusSpeed asyncBusSpeed
         fc2BandwidthAllocation bandwidthAllocation
